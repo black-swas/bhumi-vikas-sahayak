@@ -1,0 +1,57 @@
+{
+  "request_id": "fx-amendment-q11",
+  "question": "My plot is 300 sq m and matches the Development Plan land use. Do I need a separate development permission?",
+  "lang": "en",
+  "status": "PARTIAL",
+  "intent": "development_permission_need",
+  "answer": "In the consolidated rules, where the land is already developed in the Central area of the adopted Development Plan, the local body issues the building permission as per the Development Plan's land use. A later amendment is reported for plots up to 500 sq m, but it is not in the consolidated copy: verify it in the Gazette.",
+  "calculations": [],
+  "citations": [
+    {
+      "chunk_id": "r2-5-0",
+      "rule": "2",
+      "label": "2(5)",
+      "title": "Definitions",
+      "page": 3,
+      "quote": "The land is already developed in the Central area of the adopted Development Plan, in these areas, the building permission shall be issued by the local bodies as per the landuse and landuse permissibility of the Development Plan",
+      "verified": true,
+      "pdf_en": "/pdf/rules-en.pdf#page=3",
+      "pdf_hi": "/pdf/rules-hi.pdf#page=3"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "amendment",
+      "id": "2026-08-28-r2-5-c",
+      "text": "Per a secondary summary (28/08/2026): on plots up to 500 sq m, construction conforming to the land use of the approved Development Plan may be permitted by the local authority without separate development permission under Rule 2(5)(a), subject to the Development Plan's norms. Not in the 06/03/2025 consolidated copy. Notification number and Gazette reference not available; verify in the official Gazette before relying on it."
+    }
+  ],
+  "missing_info": [],
+  "candidates": [],
+  "version": {
+    "label": "consolidated to 06/03/2025",
+    "corpus_sha256": "148eb556793fb741778c03206f21fb4ed3cb59ac3da4313ab78793fa725a44ad",
+    "amendments": [
+      "2026-08-28-r2-5-c"
+    ]
+  },
+  "meta": {
+    "providers": {
+      "A": "cerebras",
+      "B": "anthropic"
+    },
+    "models": {
+      "A": "qwen-3.8-27b",
+      "B": "claude-haiku-5-5"
+    },
+    "runtime_config_version": null,
+    "latency_ms": 2600,
+    "model_time_s": {
+      "A": 0.22,
+      "B": 1.1
+    },
+    "calls": 2,
+    "replay": false,
+    "tokens": {}
+  }
+}

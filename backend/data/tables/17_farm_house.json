@@ -1,0 +1,22 @@
+{
+  "table_id": "17_farm_house",
+  "rule": "17",
+  "sub_rule": "(a)-(f)",
+  "page": 34,
+  "title": "Farm house norms (agricultural zone)",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "min_plot": {
+    "sub_rule": "(a)",
+    "hectares": 0.4,
+    "sqm": 4000,
+    "derived_fields": ["sqm"],
+    "row_text": "(a) Minimum size of the plot shall be 0.40 hectare;"
+  },
+  "max_far": {"sub_rule": "(b)", "value": 0.1, "row_text": "(b) Maximum F.A.R. shall be 0.10;"},
+  "max_height": {"sub_rule": "(c)", "value_m": 7.5, "row_text": "(c) The maximum height of structure shall be 7.5 meters with sloping roof;"},
+  "live_trees": {"sub_rule": "(d)", "per_hectare": 100, "row_text": "(d) Farm House shall have a minimum of 100 live trees per hectare on the plot before the application for building constructions is made to the Authority;"},
+  "road_access": {"sub_rule": "(e)", "min_width_m": 7.5, "row_text": "(e) Farm House shall be accessible by road having width not less than 7.5 meters;"},
+  "open_space": {"sub_rule": "(f)", "mos_m": 7.5, "row_text": "(f) Farm House shall have minimum 7.50 meters open space (MOS) from all sides."},
+  "verified_by": "",
+  "verified_at": ""
+}

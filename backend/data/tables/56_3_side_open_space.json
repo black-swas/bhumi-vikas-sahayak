@@ -1,0 +1,64 @@
+{
+  "table_id": "56_3_side_open_space",
+  "rule": "56",
+  "sub_rule": "(3)",
+  "page": 78,
+  "title": "Side open space by building type, residential buildings up to 12.5 m",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "applies_if": {
+    "use": [
+      "residential"
+    ],
+    "height_m_max": 12.5
+  },
+  "types": {
+    "detached": {
+      "sides_required": 2,
+      "side_open_space_m": 3.0,
+      "row_text": "(i) For detached buildings there shall be minimum side open spaces of 3 meters on both the sides :",
+      "relaxation": {
+        "height_m_max": 7.0,
+        "frontage_m_lt": 12.0,
+        "reduced_side_open_space_m": 1.5,
+        "applies_to_sides": 1,
+        "row_text": "Provided that for detached residential building up to 7 meters in height on plots with a frontage less than 12 meters, one of the sides open space may be reduced to 1.5 meters.",
+        "derived_fields": [
+          "applies_to_sides"
+        ]
+      },
+      "derived_fields": [
+        "sides_required"
+      ]
+    },
+    "semi_detached": {
+      "sides_required": 1,
+      "side_open_space_m": 3.0,
+      "row_text": "(ii) For semi-detached building there shall be a minimum side open space of 3.0 meters on one side.",
+      "relaxation": {
+        "height_m_max": 10.0,
+        "frontage_m_le": 10.0,
+        "reduced_side_open_space_m": 2.5,
+        "applies_to_sides": 1,
+        "row_text": "For Semi-detached building up to 10 meters in height on plots with a frontage up to 10 meters, the side open space may be reduced to 2.5 meters.",
+        "derived_fields": [
+          "applies_to_sides"
+        ]
+      },
+      "derived_fields": [
+        "sides_required"
+      ]
+    },
+    "row": {
+      "sides_required": 0,
+      "side_open_space_m": 0.0,
+      "display": "Nil",
+      "derived_fields": [
+        "side_open_space_m",
+        "sides_required"
+      ],
+      "row_text": "(iii) For row-type buildings, no side open space is required."
+    }
+  },
+  "verified_by": "",
+  "verified_at": ""
+}

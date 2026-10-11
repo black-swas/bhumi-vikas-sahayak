@@ -1,0 +1,17 @@
+[
+  {
+    "id": "2026-08-28-r2-5-c",
+    "affects": ["2(5)", "2(5)(c)", "12"],
+    "intents": ["development_permission_need"],
+    "date": "28/08/2026",
+    "kind": "substitution",
+    "summary_en": "Per a secondary summary: on plots up to 500 sq m, construction conforming to the land use of the approved Development Plan may be permitted by the local authority without separate development permission under Rule 2(5)(a), subject to the Development Plan's norms.",
+    "summary_hi": "द्वितीयक सार के अनुसार: 500 वर्ग मीटर तक के भूखंडों पर, स्वीकृत विकास योजना के भूमि-उपयोग के अनुरूप निर्माण की अनुमति स्थानीय प्राधिकारी, नियम 2(5)(क) के अंतर्गत पृथक विकास अनुज्ञा के बिना, विकास योजना के मानदंडों के अधीन दे सकता है।",
+    "summary_hi_reviewed": false,
+    "source_url": "https://teamleaseregtech.com/updates/article/59469/government-of-madhya-pradesh-amendment-to-land-development-rules",
+    "source_type": "secondary_summary",
+    "verbatim_available": false,
+    "caveat_en": "Not in the 06/03/2025 consolidated copy. Notification number and Gazette reference not available; verify in the official Gazette before relying on it.",
+    "caveat_hi": "यह 06/03/2025 की समेकित प्रति में नहीं है। अधिसूचना क्रमांक और राजपत्र संदर्भ उपलब्ध नहीं हैं; भरोसा करने से पहले आधिकारिक राजपत्र में जाँच करें।"
+  }
+]

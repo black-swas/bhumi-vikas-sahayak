@@ -1,0 +1,22 @@
+{
+  "table_id": "12_a_instant_approval",
+  "rule": "12-A",
+  "sub_rule": "intro",
+  "page": 21,
+  "title": "Instant/deemed approval for residential plots (area threshold)",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF. Inserted by Notification UDH-3/0031/2024/18-5 dated 20 June 2024; sits inside Rule 12 in the data.",
+  "applies_if": {"use": ["residential"]},
+  "threshold": {
+    "plot_area_sqm_le": 186.0,
+    "row_text": "12 A. For residential plots up to 1[186 sqm], instant/deemed approval shall be issued on following conditions.-"
+  },
+  "conditions": [
+    {"no": 2, "row_text": "(2) This instant/deemed approval shall be applicable for the layout approved from Town and Country Planning Department and development permission issued by Urban Local Bodies."},
+    {"no": 3, "row_text": "(3) Only individual plot holder shall be eligible for application of instant/deemed approval."},
+    {"no": 4, "row_text": "(4) Proposed Building Plan should be as per the provisions of the Rules and the approved development plan of the city."},
+    {"no": 11, "row_text": "(11) The submission of application form, and affidavit as per the Appendix A- 2(2)and Appendix A-2(3)with fees, shall be a deemed sanction, itself."},
+    {"no": 12, "row_text": "(12) If the Building Plan or construction work is not done according to the provisions of the Rules or the development plan, the instant/deemed building approval granted shall automatically stand cancelled and action shall be taken to remove the illegal construction."}
+  ],
+  "verified_by": "",
+  "verified_at": ""
+}

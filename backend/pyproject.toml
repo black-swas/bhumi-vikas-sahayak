@@ -1,0 +1,43 @@
+[project]
+name = "bhumi-vikas-sahayak-backend"
+version = "0.1.0"
+description = "Backend for Bhumi Vikas Sahayak (prototype, not legal advice)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic>=2.0",
+    "cerebras_cloud_sdk",
+    "anthropic",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.uv]
+package = false
+
+[tool.vercel]
+entrypoint = "app.main:app"
+
+[tool.ruff.lint.per-file-ignores]
+# report strings are long f-strings that read better unbroken
+"evals/run_eval.py" = ["E501"]
+"scripts/record_demo.py" = ["E501"]  # demo questions are long literals
+"scripts/preflight.py" = ["E501"]  # check descriptions read better unbroken
+"tests/test_deploy.py" = ["E501"]
+"tests/test_evals.py" = ["E501"]

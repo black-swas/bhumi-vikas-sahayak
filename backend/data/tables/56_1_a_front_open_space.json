@@ -1,0 +1,25 @@
+{
+  "table_id": "56_1_a_front_open_space",
+  "rule": "56",
+  "sub_rule": "(1)(a)",
+  "page": 77,
+  "title": "Front open space, residential buildings up to 12.5 m",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "applies_if": {"use": ["residential"], "height_m_max": 12.5},
+  "input": {"name": "road_width_m", "unit": "m"},
+  "rows": [
+    {"gt": null, "le": 9.0, "value": 3.0, "unit": "m", "row_text": "1. Up to 9.0 meters 3.0 meters"},
+    {"gt": 9.0, "le": 12.0, "value": 3.6, "unit": "m", "row_text": "2. More than 9.0 meters and up to 12 meters 3.6 meters"},
+    {"gt": 12.0, "le": 18.0, "value": 4.5, "unit": "m", "row_text": "3. More than 12.0 meters and up to 18 meters 4.5 meters"},
+    {"gt": 18.0, "le": null, "value": 6.0, "unit": "m", "row_text": "4. Above 18 meters 6.0 meters"}
+  ],
+  "existing_street_note": {
+    "sub_rule": "(1)(b)",
+    "page": 77,
+    "road_width_lt_m": 6.0,
+    "building_line_from_centre_m": 6.0,
+    "row_text": "(b) In existing developed areas with streets less than 6.0 meters in width, the distances of the building (building line) shall be at 6.0 meters from the center line of the street."
+  },
+  "verified_by": "",
+  "verified_at": ""
+}

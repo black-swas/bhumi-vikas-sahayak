@@ -1,0 +1,171 @@
+{
+  "request_id": "fx-flagship",
+  "question": "My plot is 200 sq m on a 9 m road. How much gap do I leave at the front, how many floors can I build, and what fee do I pay?",
+  "lang": "en",
+  "status": "PARTIAL",
+  "intent": "plot_norms",
+  "answer": "Front open space is 3.0 m (road up to 9.0 m) and rear open space is 2.5 m (plot above 150 and up to 225 sq m). The rules give no number of floors; they cap built-up area by FAR 1.25, so about 250 sq m, unless the Development Plan says otherwise. At 250 sq m the permission fee is Rs 3,000 and the application fee is Rs 250.",
+  "calculations": [
+    {
+      "calc_id": "front_open_space",
+      "inputs": {
+        "road_width_m": 9.0
+      },
+      "matched_row_text": "1. Up to 9.0 meters 3.0 meters",
+      "result": {
+        "value": 3.0,
+        "unit": "m"
+      },
+      "rule": "56",
+      "sub_rule": "(1)(a)",
+      "page": 77,
+      "assumptions": [
+        "Building height assumed to be 12.5 m or less (Rule 56 applies)"
+      ],
+      "warnings": [],
+      "details": {}
+    },
+    {
+      "calc_id": "rear_open_space",
+      "inputs": {
+        "plot_area_sqm": 200.0
+      },
+      "matched_row_text": "3. Above 150 and up to 225.00 2.50",
+      "result": {
+        "value": 2.5,
+        "unit": "m"
+      },
+      "rule": "56",
+      "sub_rule": "(2)(a)",
+      "page": 78,
+      "assumptions": [],
+      "warnings": [],
+      "details": {}
+    },
+    {
+      "calc_id": "max_built_up",
+      "inputs": {
+        "plot_area_sqm": 200.0,
+        "use": "residential"
+      },
+      "matched_row_text": "Residential 1.25",
+      "result": {
+        "value": 250.0,
+        "unit": "sq m"
+      },
+      "rule": "61",
+      "sub_rule": "Table 8",
+      "page": 83,
+      "assumptions": [
+        "Use assumed to be residential"
+      ],
+      "warnings": [
+        "Rule 61 notes (3) and (4) allow a servant quarter and covered parking that are not counted in this figure"
+      ],
+      "details": {}
+    },
+    {
+      "calc_id": "permission_fee",
+      "inputs": {
+        "built_up_area_sqm": 250.0,
+        "use": "residential"
+      },
+      "matched_row_text": "201 300 3,000",
+      "result": {
+        "value": 3000.0,
+        "unit": "INR"
+      },
+      "rule": "21",
+      "sub_rule": "(3)(b)",
+      "page": 36,
+      "assumptions": [
+        "Fee computed at the maximum 250 sq m built-up area; the actual built-up area was not given"
+      ],
+      "warnings": [],
+      "details": {}
+    },
+    {
+      "calc_id": "application_fee",
+      "inputs": {
+        "built_up_area_sqm": 250.0
+      },
+      "matched_row_text": "(ii) for the Building Permission Rs 1.00 per Square meter of the proposed built-",
+      "result": {
+        "value": 250.0,
+        "unit": "INR"
+      },
+      "rule": "21",
+      "sub_rule": "(2)(ii)",
+      "page": 35,
+      "assumptions": [
+        "Fee computed at the maximum 250 sq m built-up area; the actual built-up area was not given"
+      ],
+      "warnings": [],
+      "details": {}
+    }
+  ],
+  "citations": [
+    {
+      "chunk_id": "r56-1-0",
+      "rule": "56",
+      "label": "56(1)",
+      "title": "Residential Buildings",
+      "page": 77,
+      "quote": "Up to 9.0 meters 3.0 meters",
+      "verified": true,
+      "pdf_en": "/pdf/rules-en.pdf#page=77",
+      "pdf_hi": "/pdf/rules-hi.pdf#page=77"
+    },
+    {
+      "chunk_id": "r56-2-0",
+      "rule": "56",
+      "label": "56(2)",
+      "title": "Residential Buildings",
+      "page": 78,
+      "quote": "Above 150 and up to 225.00 2.50",
+      "verified": true,
+      "pdf_en": "/pdf/rules-en.pdf#page=78",
+      "pdf_hi": "/pdf/rules-hi.pdf#page=78"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "dp_precedence",
+      "text": "Rule 103: norms in the Bhopal Development Plan take precedence; Rule 61 Table 8: FAR may be adopted as provided in the Development Plan. Check the DP before finalising."
+    },
+    {
+      "type": "info",
+      "text": "Rule 12-A instant approval covers residential plots up to 186 sq m, so a 200 sq m plot is above that limit."
+    }
+  ],
+  "missing_info": [
+    "built-up area",
+    "building height",
+    "building type"
+  ],
+  "candidates": [],
+  "version": {
+    "label": "consolidated to 06/03/2025",
+    "corpus_sha256": "148eb556793fb741778c03206f21fb4ed3cb59ac3da4313ab78793fa725a44ad",
+    "amendments": [
+      "2026-08-28-r2-5-c"
+    ]
+  },
+  "meta": {
+    "providers": {
+      "A": "cerebras",
+      "B": "none"
+    },
+    "models": {
+      "A": "qwen-3.8-27b"
+    },
+    "runtime_config_version": null,
+    "latency_ms": 1400,
+    "model_time_s": {
+      "A": 0.21
+    },
+    "calls": 1,
+    "replay": false,
+    "tokens": {}
+  }
+}

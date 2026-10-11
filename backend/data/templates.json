@@ -1,0 +1,140 @@
+{
+  "_note": "Answer text for pure-calculation intents, filled only from calculator output (SPEC §11). Hindi wording is a working draft: teammate D must check it against the official Hindi PDF terms.",
+  "terms": {
+    "detached": {"en": "detached building", "hi": "पृथक भवन (detached)"},
+    "semi_detached": {"en": "semi-detached building", "hi": "अर्ध-पृथक भवन (semi-detached)"},
+    "row": {"en": "row-type building", "hi": "पंक्तिबद्ध भवन (row type)"}
+  },
+  "sections": {
+    "front_open_space": [
+      {"requires": ["val"],
+       "en": "Front open space: {val} m for a street {road_width_m} m wide (Rule 56(1)(a)).",
+       "hi": "सामने का खुला स्थान: {road_width_m} मीटर चौड़ी सड़क के लिए {val} मीटर (नियम 56(1)(a))।"},
+      {"when": "none",
+       "en": "Rule 56 does not give a front open space for this building height; see the warning.",
+       "hi": "इस भवन ऊँचाई के लिए नियम 56 सामने का खुला स्थान नहीं देता; चेतावनी देखें।"}
+    ],
+    "rear_open_space": [
+      {"requires": ["display"],
+       "en": "Rear open space: {display} for a plot of {plot_area_sqm} sq m (Rule 56(2)(a)).",
+       "hi": "पीछे का खुला स्थान: {plot_area_sqm} वर्ग मीटर के भूखंड के लिए {display_hi} (नियम 56(2)(a))।"},
+      {"when": "none",
+       "en": "Rule 56 does not give a rear open space for this building height; see the warning.",
+       "hi": "इस भवन ऊँचाई के लिए नियम 56 पीछे का खुला स्थान नहीं देता; चेतावनी देखें।"}
+    ],
+    "plot_types": [
+      {"requires": ["fits_text"],
+       "en": "A plot of {plot_area_sqm} sq m fits these types under Rule 53(1): {fits_text}.",
+       "hi": "{plot_area_sqm} वर्ग मीटर का भूखंड नियम 53(1) के अनुसार इन प्रकारों में आता है: {fits_text}।"},
+      {"when": "none",
+       "en": "A plot of {plot_area_sqm} sq m does not fit any residential type in Rule 53(1).",
+       "hi": "{plot_area_sqm} वर्ग मीटर का भूखंड नियम 53(1) के किसी आवासीय प्रकार में नहीं आता।"}
+    ],
+    "side_open_space": [
+      {"requires": ["sides_text"],
+       "en": "Side open space for a {type_text}: {sides_text} (Rule 56(3)).",
+       "hi": "{type_text} के लिए बगल का खुला स्थान: {sides_text} (नियम 56(3))।"},
+      {"when": "none",
+       "en": "Rule 56 does not give a side open space for this building height; see the warning.",
+       "hi": "इस भवन ऊँचाई के लिए नियम 56 बगल का खुला स्थान नहीं देता; चेतावनी देखें।"}
+    ],
+    "max_built_up": [
+      {"requires": ["val", "far"],
+       "en": "Maximum built-up area: {val} sq m (FAR {far} x plot {plot_area_sqm} sq m, Rule 61 Table 8). The rules give no number of floors.",
+       "hi": "अधिकतम निर्मित क्षेत्र: {val} वर्ग मीटर (FAR {far} x भूखंड {plot_area_sqm} वर्ग मीटर, नियम 61 तालिका 8)। नियमों में मंजिलों की कोई संख्या नहीं दी गई है।"},
+      {"when": "none",
+       "en": "Rule 61 Table 8 gives no FAR number for this use, so no maximum built-up area is computed.",
+       "hi": "नियम 61 तालिका 8 इस उपयोग के लिए FAR की कोई संख्या नहीं देती, इसलिए अधिकतम निर्मित क्षेत्र की गणना नहीं की गई।"}
+    ],
+    "application_fee": [
+      {"requires": ["inr"],
+       "en": "Application fee: {inr} (Rule 21(2)(ii)).",
+       "hi": "आवेदन शुल्क: {inr} (नियम 21(2)(ii))।"}
+    ],
+    "permission_fee": [
+      {"requires": ["inr"],
+       "en": "Permission fee: {inr} (Rule 21(3)).",
+       "hi": "अनुमति शुल्क: {inr} (नियम 21(3))।"},
+      {"when": "none",
+       "en": "Permission fee: the built-up area falls between two table rows of Rule 21(3); see the warning.",
+       "hi": "अनुमति शुल्क: निर्मित क्षेत्र नियम 21(3) की दो पंक्तियों के बीच आता है; चेतावनी देखें।"}
+    ],
+    "instant_approval_threshold": [
+      {"when": "within_limit", "requires": ["plot_area_sqm", "threshold_sqm"],
+       "en": "A plot of {plot_area_sqm} sq m is within the Rule 12-A area limit of {threshold_sqm} sq m (area limit only).",
+       "hi": "{plot_area_sqm} वर्ग मीटर का भूखंड नियम 12-A की {threshold_sqm} वर्ग मीटर की क्षेत्र-सीमा के भीतर है (केवल क्षेत्र-सीमा)।"},
+      {"when": "above_limit", "requires": ["plot_area_sqm", "threshold_sqm"],
+       "en": "A plot of {plot_area_sqm} sq m is above the {threshold_sqm} sq m limit of Rule 12-A.",
+       "hi": "{plot_area_sqm} वर्ग मीटर का भूखंड नियम 12-A की {threshold_sqm} वर्ग मीटर की सीमा से अधिक है।"},
+      {"when": "not_applicable",
+       "en": "Rule 12-A covers residential plots only.",
+       "hi": "नियम 12-A केवल आवासीय भूखंडों पर लागू है।"}
+    ],
+    "electric_line_clearance": [
+      {"requires": ["vertical_m", "horizontal_m"],
+       "en": "Minimum distance from the overhead line: {vertical_m} m vertically and {horizontal_m} m horizontally (Rule 52(1)), or the figure in the applicable Electricity Rules if that is more.",
+       "hi": "ऊपरी बिजली लाइन से न्यूनतम दूरी: ऊर्ध्वाधर {vertical_m} मीटर और क्षैतिज {horizontal_m} मीटर (नियम 52(1)), या लागू विद्युत नियमों की दूरी यदि अधिक हो।"},
+      {"requires": ["corridor_m"],
+       "en": "For extra high voltage lines (Rule 52(1)(c) note) keep a clear horizontal corridor of {corridor_m} m ({each_side_of_centre_line_m} m on each side of the centre line), or as the applicable Electricity Rules specify if more.",
+       "hi": "अति उच्च वोल्टेज लाइनों के लिए (नियम 52(1)(c) की टिप्पणी) {corridor_m} मीटर का खुला क्षैतिज गलियारा रखें (केंद्र रेखा के प्रत्येक ओर {each_side_of_centre_line_m} मीटर), या लागू विद्युत नियमों के अनुसार यदि अधिक हो।"}
+    ],
+    "high_rise_norms": [
+      {"requires": ["val", "table", "row_no", "front_mos_m", "side_rear_mos_m", "height_text"],
+       "en": "Rule 42 Table {table}, row {row_no}: FAR {val}, front open space {front_mos_m} m, side and rear open space {side_rear_mos_m} m, height {height_text}.",
+       "hi": "नियम 42 तालिका {table}, पंक्ति {row_no}: FAR {val}, सामने का खुला स्थान {front_mos_m} मीटर, बगल और पीछे का खुला स्थान {side_rear_mos_m} मीटर, ऊँचाई {height_text_hi}।"},
+      {"when": "none",
+       "en": "The Rule 42 norms could not be computed from these inputs; see the warning.",
+       "hi": "इन जानकारियों से नियम 42 के मानदंड नहीं निकाले जा सके; चेतावनी देखें।"}
+    ],
+    "farm_house": [
+      {"requires": ["min_plot_sqm", "min_plot_hectares", "max_far"],
+       "en": "Farm house (Rule 17): minimum plot {min_plot_sqm} sq m ({min_plot_hectares} ha) and maximum FAR {max_far}.",
+       "hi": "फार्म हाउस (नियम 17): न्यूनतम भूखंड {min_plot_sqm} वर्ग मीटर ({min_plot_hectares} हेक्टेयर) और अधिकतम FAR {max_far}।"},
+      {"requires": ["plot_area_sqm", "max_built_up_sqm"],
+       "en": "For a plot of {plot_area_sqm} sq m the maximum built-up area is {max_built_up_sqm} sq m.",
+       "hi": "{plot_area_sqm} वर्ग मीटर के भूखंड पर अधिकतम निर्मित क्षेत्र {max_built_up_sqm} वर्ग मीटर है।"}
+    ],
+    "permission_validity": [
+      {"requires": ["initial_years", "revalidation_terms", "revalidation_years_each", "cap_years"],
+       "en": "A permission is valid for {initial_years} years and may be revalidated for {revalidation_terms} consecutive terms of {revalidation_years_each} year each; the {cap_years}-year limit is not relaxed (Rule 23).",
+       "hi": "अनुमति {initial_years} वर्ष के लिए वैध है और {revalidation_years_each}-{revalidation_years_each} वर्ष की {revalidation_terms} लगातार अवधियों के लिए पुनः वैध की जा सकती है; {cap_years} वर्ष की सीमा में छूट नहीं है (नियम 23)।"},
+      {"requires": ["grant_date_display", "initial_expiry_display", "final_expiry_display"],
+       "en": "Granted on {grant_date_display}: valid until {initial_expiry_display}, and with both revalidations until {final_expiry_display}.",
+       "hi": "{grant_date_display} को स्वीकृत: {initial_expiry_display} तक वैध, और दोनों पुनर्वैधताओं सहित {final_expiry_display} तक।"}
+    ]
+  },
+  "messages": {
+    "not_found": {
+      "en": "Not found in the rules. The MP Bhumi Vikas Rules, 2012 (consolidated to 06/03/2025) do not cover this question. Refer the citizen to the concerned department.",
+      "hi": "नियमों में नहीं मिला। मध्यप्रदेश भूमि विकास नियम, 2012 (06/03/2025 तक समेकित) इस प्रश्न को कवर नहीं करते। नागरिक को संबंधित विभाग के पास भेजें।"
+    },
+    "direct_text": {
+      "en": "Offline: showing the official text of the rule you named, not a summary.",
+      "hi": "ऑफ़लाइन: आपके बताए नियम का आधिकारिक पाठ दिखाया गया है, सारांश नहीं।"
+    },
+    "needs_review": {
+      "en": "The answer could not be verified against the rule text, so it is not shown. Read the candidate rules below, or ask a senior officer or the Town & Country Planning office.",
+      "hi": "उत्तर को नियम के पाठ से सत्यापित नहीं किया जा सका, इसलिए नहीं दिखाया गया। नीचे दिए गए संभावित नियम पढ़ें, या वरिष्ठ अधिकारी अथवा नगर तथा ग्राम निवेश कार्यालय से पूछें।"
+    },
+    "error": {
+      "en": "Something went wrong. Please try again; the calculators still work in offline mode.",
+      "hi": "कुछ गड़बड़ हो गई। कृपया फिर कोशिश करें; कैलकुलेटर ऑफ़लाइन मोड में भी काम करते हैं।"
+    },
+    "need_more_info": {
+      "en": "More information is needed: {missing}.",
+      "hi": "अधिक जानकारी चाहिए: {missing}।"
+    },
+    "missing_labels": {
+      "plot_area_sqm": {"en": "plot area", "hi": "भूखंड का क्षेत्रफल"},
+      "road_width_m": {"en": "road width", "hi": "सड़क की चौड़ाई"},
+      "height_m": {"en": "building height", "hi": "भवन की ऊँचाई"},
+      "building_type": {"en": "building type", "hi": "भवन का प्रकार"},
+      "built_up_area_sqm": {"en": "built-up area", "hi": "निर्मित क्षेत्र"},
+      "voltage": {"en": "line voltage", "hi": "लाइन का वोल्टेज"},
+      "commercial_category": {"en": "centre category", "hi": "केंद्र की श्रेणी"},
+      "grant_date": {"en": "date or year of grant", "hi": "स्वीकृति की तिथि या वर्ष"},
+      "cinema_seats": {"en": "seating capacity", "hi": "बैठने की क्षमता"},
+      "frontage_m": {"en": "frontage", "hi": "सड़क की ओर की चौड़ाई (frontage)"}
+    }
+  }
+}

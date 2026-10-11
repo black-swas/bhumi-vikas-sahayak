@@ -1,0 +1,33 @@
+{
+  "table_id": "23_validity",
+  "rule": "23",
+  "sub_rule": "(1)-(3)",
+  "page": 41,
+  "title": "Duration of sanction and revalidation",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "initial_validity": {
+    "sub_rule": "(1)",
+    "years": 3,
+    "derived_fields": ["years"],
+    "row_text": "(1) In case of development permission under Section 30 of Madhya Pradesh Nagar Tatha Gram Nivesh Adhiniyam, 1973 the sanction once accorded shall remain valid up to three years."
+  },
+  "revalidation": {
+    "sub_rule": "(2)",
+    "terms": 2,
+    "years_per_term": 1,
+    "derived_fields": ["terms", "years_per_term"],
+    "row_text": "Such revalidation may be permitted for two consecutive terms of one year each, after which proposals shall have to be submitted afresh."
+  },
+  "five_year_limit": {
+    "sub_rule": "(2)",
+    "years": 5,
+    "derived_fields": ["years"],
+    "row_text": "The limitation of five years shall not be relaxed."
+  },
+  "no_lapse_once_started": {
+    "sub_rule": "(3)",
+    "row_text": "(3) In case execution of the project begins during the validity of the permission granted under Section 30 of the Act, the permission shall not be deemed to lapse thereafter at any time and no revalidation shall be required."
+  },
+  "verified_by": "",
+  "verified_at": ""
+}

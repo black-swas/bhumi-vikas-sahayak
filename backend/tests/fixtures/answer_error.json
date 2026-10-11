@@ -1,0 +1,33 @@
+{
+  "request_id": "fx-error",
+  "question": "How much front gap?",
+  "lang": "en",
+  "status": "ERROR",
+  "intent": "general_lookup",
+  "answer": "Something went wrong. Please try again; the calculators still work in offline mode.",
+  "calculations": [],
+  "citations": [],
+  "warnings": [],
+  "missing_info": [],
+  "candidates": [],
+  "version": {
+    "label": "consolidated to 06/03/2025",
+    "corpus_sha256": "148eb556793fb741778c03206f21fb4ed3cb59ac3da4313ab78793fa725a44ad",
+    "amendments": [
+      "2026-08-28-r2-5-c"
+    ]
+  },
+  "meta": {
+    "providers": {
+      "A": "offline",
+      "B": "none"
+    },
+    "models": {},
+    "runtime_config_version": null,
+    "latency_ms": 20,
+    "model_time_s": {},
+    "calls": 0,
+    "replay": false,
+    "tokens": {}
+  }
+}

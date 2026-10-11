@@ -1,0 +1,39 @@
+{
+  "table_id": "42_table5",
+  "rule": "42",
+  "sub_rule": "(2), Table 5",
+  "page": 59,
+  "title": "Development norms for high rise buildings",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "applies_if": {"high_rise": true, "definition": "Rule 2(38): more than ten storeys or height above 30 m"},
+  "rows": [
+    {
+      "row_no": 1,
+      "columns": {"road_width_min_m": 30, "plot_area_min_sqm": 2500, "frontage_min_m": 30, "far": 2.25, "ground_coverage_pct": 30, "max_height_m": 45, "front_mos_m": 15.0, "side_rear_mos_m": 7.5},
+      "row_text": "1. 30 m. 2500 30 m. 1:2.25 30 Up to 45 15.00 m. 7.5 m."
+    },
+    {
+      "row_no": 2,
+      "columns": {"road_width_min_m": 36, "plot_area_min_sqm": 3000, "frontage_min_m": 40, "far": 2.5, "ground_coverage_pct": 30, "max_height_m": 60, "front_mos_m": 18.0, "side_rear_mos_m": 9.0},
+      "row_text": "2. 36 m. 3000 40 m. 1:2.50 30 Up to 60 18.00 m. 9.0 m."
+    },
+    {
+      "row_no": 3,
+      "columns": {"road_width_min_m": 45, "plot_area_min_sqm": 3500, "frontage_min_m": 45, "far": 2.75, "ground_coverage_pct": 30, "max_height_m": 75, "front_mos_m": 21, "side_rear_mos_m": 9},
+      "row_text": "3. 45 m. 3500 45 m. 1:2.75 30 Up to 75 21 m. 9 m."
+    },
+    {
+      "row_no": 4,
+      "columns": {"road_width_min_m": 60, "plot_area_min_sqm": 4000, "frontage_min_m": 50, "far": 3.0, "ground_coverage_pct": 30, "max_height_m": 90, "front_mos_m": 24.0, "side_rear_mos_m": 10},
+      "row_text": "4. 60 m. 4000 50 m. 1:3.0 30 Up to 90 24.00 10 m."
+    },
+    {
+      "row_no": 5,
+      "columns": {"road_width_min_m": 75, "plot_area_min_sqm": 4500, "frontage_min_m": 60, "far": 3.0, "ground_coverage_pct": 30, "max_height_m": null, "front_mos_m": 30.0, "side_rear_mos_m": 12},
+      "height_display": "Above 90 meters",
+      "row_text": "5. 75 m. 4500 60 m. 1:3.0 30 Above 30.00 12 m."
+    }
+  ],
+  "verified_by": "",
+  "verified_at": ""
+}

@@ -1,0 +1,46 @@
+{
+  "table_id": "61_far",
+  "rule": "61",
+  "sub_rule": "Table 8",
+  "page": 83,
+  "title": "Floor Area Ratio for different use groups",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "rows": [
+    {"use": "residential", "category": null, "value": 1.25, "unit": "FAR", "row_text": "1. Resdential 1.25"},
+    {"use": "commercial", "category": "city_centre", "value": 2.5, "unit": "FAR", "row_text": "2. Commercial 2.50 City Centre"},
+    {"use": "commercial", "category": "sub_city_centre", "value": 2.0, "unit": "FAR", "row_text": "2.00 Sub-city center"},
+    {"use": "commercial", "category": "community_centre", "value": 1.75, "unit": "FAR", "row_text": "1.75 Community Center"},
+    {"use": "commercial", "category": "local_shopping_centre", "value": 1.5, "unit": "FAR", "row_text": "1.50 Local Shopping Centre"},
+    {"use": "commercial", "category": "convenience_shopping_centre", "value": 1.25, "unit": "FAR", "row_text": "1.25 Convenience Shopping Centre"},
+    {"use": "public_semi_public", "category": null, "value": 1.0, "unit": "FAR", "row_text": "3. Public 1.00 Administrative Areas / Education and"},
+    {"use": "industrial", "category": null, "value": null, "unit": "FAR", "display": "as per rule 48", "row_text": "4. Industrial as per rule as per rule 48"}
+  ],
+  "asterisk_note": {
+    "page": 83,
+    "row_text": "F.A.R and Density may be adopted as provided in the Development Plans of respective towns."
+  },
+  "notes": {
+    "servant_quarter": {
+      "sub_rule": "Note (3)",
+      "page": 84,
+      "plot_area_sqm_min": 200.0,
+      "plot_area_sqm_max_one_quarter": 500.0,
+      "max_quarter_area_sqm": 25.0,
+      "row_text": "(3) On plot admeasuring 200 to 500 sq. meters one servant quarter and on plot admeasuring more than 500 sq. meters two servant quarters may be permitted, The size of a servant quarter shall not exceed 25 sq. m. and the area of the servant quarter shall not be counted in the built up area or the covered area."
+    },
+    "covered_parking": {
+      "sub_rule": "Note (4)",
+      "page": 84,
+      "plot_area_sqm_min": 200.0,
+      "clear_height_m": 2.4,
+      "row_text": "(4) Covered parking with a clear height of 2.4 meters may be provided within the permissible ground coverage on plots measuring 1[200 sq.m.] or more. Such area of parking shall not be counted towards Floor Area Ratio and permissible height calculations."
+    }
+  },
+  "development_plan_precedence": {
+    "rule": "103",
+    "page": 107,
+    "row_text": "The norms and regulations applicable in the plan area shall be such as prescribed in the relevant development plan"
+  },
+  "verified_by": "",
+  "verified_at": ""
+}

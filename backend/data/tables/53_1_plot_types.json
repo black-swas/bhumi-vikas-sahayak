@@ -1,0 +1,31 @@
+{
+  "table_id": "53_1_plot_types",
+  "rule": "53",
+  "sub_rule": "(1)(i)",
+  "page": 70,
+  "title": "Minimum plot size and frontage by type of development (residential)",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "applies_if": {"use": ["residential"]},
+  "rows": [
+    {
+      "type": "detached",
+      "plot_area_sqm": {"gt": 225.0},
+      "frontage_m": {"gt": 12.0},
+      "row_text": "Detached building above 225 above 12"
+    },
+    {
+      "type": "semi_detached",
+      "plot_area_sqm": {"ge": 125.0, "le": 225.0},
+      "frontage_m": {"ge": 8.0, "le": 12.0},
+      "row_text": "Semi-detached building 125-225 8 to 12"
+    },
+    {
+      "type": "row",
+      "plot_area_sqm": {"ge": 50.0, "le": 225.0},
+      "frontage_m": {"ge": 4.5, "le": 12.0},
+      "row_text": "Row type building 50-225 4.5 to 12"
+    }
+  ],
+  "verified_by": "",
+  "verified_at": ""
+}

@@ -1,0 +1,32 @@
+{
+  "table_id": "42_table4",
+  "rule": "42",
+  "sub_rule": "(1), Table 4",
+  "page": 58,
+  "title": "Development norms for buildings above 12.5 m and up to 30 m",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "applies_if": {"height_m_gt": 12.5, "height_m_le": 30.0},
+  "rows": [
+    {
+      "row_no": 1,
+      "columns": {"road_width_min_m": 12.0, "plot_area_min_sqm": 1000, "frontage_min_m": 18, "far": 1.5, "max_height_m": 18, "front_mos_m": 7.5, "side_rear_mos_m": 6.0},
+      "row_text": "1. 12.0 m. 1000 sq. 18 m. 1:1.50 - Up to 18 7.5 6.0"
+    },
+    {
+      "row_no": 2,
+      "columns": {"road_width_min_m": 18, "plot_area_min_sqm": 1500, "frontage_min_m": 21, "far": 1.75, "max_height_m": 24, "front_mos_m": 9.0, "side_rear_mos_m": 6.0},
+      "row_text": "2. 18 m. & 1500 sq. 21 m. 1:1.75 - Up to 24 9.0 6.0"
+    },
+    {
+      "row_no": 3,
+      "columns": {"road_width_min_m": 24, "plot_area_min_sqm": 2000, "frontage_min_m": 30, "far": 2.0, "max_height_m": 30, "front_mos_m": 12.0, "side_rear_mos_m": 7.5},
+      "row_text": "3. 24 m. & 2000 sq. 30 m. 1:2.0 -] Up to 30 12.00 7.5 m."
+    }
+  ],
+  "column_6_deleted": {
+    "page": 58,
+    "row_text": "In Rule 42, Column no. 6 and Note (1) of Table 4 of sub-rule (1) deleted by MP Rajpatra (Asadharan) No."
+  },
+  "verified_by": "",
+  "verified_at": ""
+}

@@ -1,0 +1,37 @@
+{
+  "request_id": "fx-not-found",
+  "question": "How do I pay property tax online?",
+  "lang": "en",
+  "status": "NOT_FOUND",
+  "intent": "out_of_scope",
+  "answer": "Not found in the rules. The MP Bhumi Vikas Rules, 2012 do not cover this. Please refer the citizen to the concerned department.",
+  "calculations": [],
+  "citations": [],
+  "warnings": [],
+  "missing_info": [],
+  "candidates": [],
+  "version": {
+    "label": "consolidated to 06/03/2025",
+    "corpus_sha256": "148eb556793fb741778c03206f21fb4ed3cb59ac3da4313ab78793fa725a44ad",
+    "amendments": [
+      "2026-08-28-r2-5-c"
+    ]
+  },
+  "meta": {
+    "providers": {
+      "A": "cerebras",
+      "B": "none"
+    },
+    "models": {
+      "A": "qwen-3.8-27b"
+    },
+    "runtime_config_version": null,
+    "latency_ms": 450,
+    "model_time_s": {
+      "A": 0.2
+    },
+    "calls": 1,
+    "replay": false,
+    "tokens": {}
+  }
+}

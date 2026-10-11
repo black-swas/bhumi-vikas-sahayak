@@ -1,0 +1,76 @@
+{
+  "request_id": "fx-hindi-q14",
+  "question": "200 वर्ग मीटर का प्लॉट, 9 मीटर सड़क: आगे कितनी जगह छोड़नी होगी?",
+  "lang": "hi",
+  "status": "PARTIAL",
+  "intent": "front_open_space",
+  "answer": "सड़क की चौड़ाई 9.0 मीटर तक होने पर सामने का खुला स्थान 3.0 मीटर है (नियम 56(1)(a))। यह मानकर चला गया है कि भवन की ऊँचाई 12.5 मीटर तक है।",
+  "calculations": [
+    {
+      "calc_id": "front_open_space",
+      "inputs": {
+        "road_width_m": 9.0
+      },
+      "matched_row_text": "1. Up to 9.0 meters 3.0 meters",
+      "result": {
+        "value": 3.0,
+        "unit": "m"
+      },
+      "rule": "56",
+      "sub_rule": "(1)(a)",
+      "page": 77,
+      "assumptions": [
+        "भवन की ऊँचाई 12.5 मीटर तक मानी गई है (नियम 56 लागू)"
+      ],
+      "warnings": [],
+      "details": {}
+    }
+  ],
+  "citations": [
+    {
+      "chunk_id": "r56-1-0",
+      "rule": "56",
+      "label": "56(1)",
+      "title": "Residential Buildings",
+      "page": 77,
+      "quote": "Up to 9.0 meters 3.0 meters",
+      "verified": true,
+      "pdf_en": "/pdf/rules-en.pdf#page=77",
+      "pdf_hi": "/pdf/rules-hi.pdf#page=77"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "dp_precedence",
+      "text": "नियम 103: भोपाल विकास योजना के मानदंड प्राथमिक होंगे। अंतिम रूप देने से पहले विकास योजना देख लें।"
+    }
+  ],
+  "missing_info": [
+    "भवन की ऊँचाई"
+  ],
+  "candidates": [],
+  "version": {
+    "label": "06/03/2025 तक समेकित",
+    "corpus_sha256": "148eb556793fb741778c03206f21fb4ed3cb59ac3da4313ab78793fa725a44ad",
+    "amendments": [
+      "2026-08-28-r2-5-c"
+    ]
+  },
+  "meta": {
+    "providers": {
+      "A": "cerebras",
+      "B": "none"
+    },
+    "models": {
+      "A": "qwen-3.8-27b"
+    },
+    "runtime_config_version": null,
+    "latency_ms": 900,
+    "model_time_s": {
+      "A": 0.25
+    },
+    "calls": 1,
+    "replay": false,
+    "tokens": {}
+  }
+}

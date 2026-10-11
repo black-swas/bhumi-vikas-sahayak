@@ -1,0 +1,23 @@
+{
+  "table_id": "52_electric",
+  "rule": "52",
+  "sub_rule": "(1)",
+  "page": 69,
+  "title": "Minimum distance between a building and an overhead electric supply line",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "whichever_is_more": {
+    "row_text": "shall be as mentioned herein below or that mentioned in the applicable Electricity Rules, whichever is more."
+  },
+  "rows": [
+    {"voltage": "low_medium", "vertical_m": 2.5, "horizontal_m": 1.2, "row_text": "(a) Low and Medium voltage 2.5 1.2"},
+    {"voltage": "high_upto_33kv", "vertical_m": 3.7, "horizontal_m": 1.2, "row_text": "(b) High voltage lines up to and 3.7 1.2"},
+    {"voltage": "extra_high", "vertical_m": null, "horizontal_m": null, "row_text": "(c) Extra high voltage lines (see note)"}
+  ],
+  "extra_high_note": {
+    "corridor_m": 15.0,
+    "each_side_of_centre_line_m": 7.5,
+    "row_text": "Note: For building close to extra high voltage lines beyond 33000 volts, clear horizontal corridor of 15 meters (7.5 meter open both side of centre line), or as specified in the applicable Electricity Rules, whichever is more, shall be provided."
+  },
+  "verified_by": "",
+  "verified_at": ""
+}

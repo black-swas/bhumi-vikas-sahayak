@@ -1,0 +1,18 @@
+{
+  "table_id": "56_2_a_rear_open_space",
+  "rule": "56",
+  "sub_rule": "(2)(a)",
+  "page": 78,
+  "title": "Rear open space, residential buildings up to 12.5 m",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "applies_if": {"use": ["residential"], "height_m_max": 12.5},
+  "input": {"name": "plot_area_sqm", "unit": "sq m"},
+  "rows": [
+    {"gt": null, "le": 40.0, "value": 0.0, "display": "Nil", "unit": "m", "derived_fields": ["value"], "row_text": "1. Up to 40.00 Nil"},
+    {"gt": 40.0, "le": 150.0, "value": 1.5, "unit": "m", "row_text": "2. Above 40.00 and up to 150.00 1.50"},
+    {"gt": 150.0, "le": 225.0, "value": 2.5, "unit": "m", "row_text": "3. Above 150 and up to 225.00 2.50"},
+    {"gt": 225.0, "le": null, "value": 3.0, "unit": "m", "row_text": "4. Above 225.00 3.00"}
+  ],
+  "verified_by": "",
+  "verified_at": ""
+}

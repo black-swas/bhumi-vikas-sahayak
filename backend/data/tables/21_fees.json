@@ -1,0 +1,132 @@
+{
+  "table_id": "21_fees",
+  "rule": "21",
+  "sub_rule": "(2)(ii), (3)(b), (3)(c)",
+  "page": 36,
+  "title": "Application fee and building permission fee",
+  "source": "MP Bhumi Vikas Rules 2012, consolidated to 06-03-2025, English PDF",
+  "band_semantics": "Permission fee bands are on whole square metres of built-up area, both ends inclusive. An area between two bands (for example 75.5) matches no row and is flagged, never rounded.",
+  "application_fee": {
+    "sub_rule": "(2)(ii)",
+    "page": 35,
+    "rate_inr_per_sqm": 1.0,
+    "unit": "INR per sq m of proposed built-up area",
+    "row_text": "(ii) for the Building Permission Rs 1.00 per Square meter of the proposed built-",
+    "not_refunded": {
+      "page": 35,
+      "row_text": "(iii) application fee shall not be refunded in any case."
+    }
+  },
+  "permission_fee_item1_residential": {
+    "sub_rule": "(3)(b) item 1",
+    "page": 36,
+    "unit": "INR",
+    "rows": [
+      {"from": 0, "to": 75, "value": 750, "row_text": "1. A building intended to be used 0 75 750"},
+      {"from": 76, "to": 125, "value": 1250, "row_text": "exclusively as residence 76 125 1,250"},
+      {"from": 126, "to": 200, "value": 2000, "row_text": "126 200 2,000"},
+      {"from": 201, "to": 300, "value": 3000, "row_text": "201 300 3,000"},
+      {"from": 301, "to": 400, "value": 4000, "row_text": "301 400 4,000"},
+      {"from": 401, "to": 600, "value": 6000, "row_text": "401 600 6,000"},
+      {"from": 601, "to": 750, "value": 7500, "row_text": "601 750 7,500"},
+      {"from": 751, "to": 1000, "value": 10000, "row_text": "751 1,000 10,000"},
+      {"from": 1001, "to": 1250, "value": 12500, "row_text": "1,001 1,250 12,500"},
+      {"from": 1251, "to": 1500, "value": 15000, "row_text": "1,251 1,500 15,000"},
+      {"from": 1501, "to": 2000, "value": 20000, "row_text": "1,501 2,000 20,000"},
+      {"from": 2001, "to": 2500, "value": 25000, "row_text": "2,001 2,500 25,000"},
+      {"gt": 2500, "to": null, "value": 50000, "row_text": "above 2500 50,000"}
+    ]
+  },
+  "permission_fee_other_items": {
+    "page": 36,
+    "commercial_or_industrial": {
+      "sub_rule": "(3)(b) item 2",
+      "surcharge_pct": 50,
+      "row_text": "2. A building intended to be used as shops, Fees as prescribed in item No. 1",
+      "row_text_parts": ["together with additional charge of", "50% of such amount of fees."]
+    },
+    "administrative_block_in_factory": {
+      "sub_rule": "(3)(b) item 3",
+      "surcharge_pct": 0,
+      "derived_fields": ["surcharge_pct"],
+      "row_text": "3. A building intended to be used as Fees as prescribed in item No. 1."
+    },
+    "shop_cum_residence": {
+      "sub_rule": "(3)(b) item 4",
+      "surcharge_pct": 50,
+      "row_text": "4. A building intended to be used for shops Fees as prescribed in item No. 1",
+      "row_text_parts": ["together with an additional charge of", "50% of such amount of fees."]
+    },
+    "cinema": {
+      "sub_rule": "(3)(b) item 5",
+      "seats_threshold": 800,
+      "fee_up_to_threshold_inr": 15000,
+      "fee_above_threshold_inr": 25000,
+      "row_text": "Upto 800 seating capacity Rs.",
+      "row_text_parts": ["15,000.00 above 800 seating", "capacity Rs. 25,000.00"]
+    },
+    "social_and_other": {
+      "sub_rule": "(3)(b) item 6",
+      "surcharge_pct": 0,
+      "derived_fields": ["surcharge_pct"],
+      "row_text": "6. A building intended to be used for any Same as in item No. 1."
+    },
+    "addition_without_built_up_area": {
+      "sub_rule": "(3)(b) item 7",
+      "fee_inr": 500,
+      "row_text": "Rs. 500.00"
+    }
+  },
+  "permission_fee_item8_9": {
+    "page": 37,
+    "addition_up_to_10_pct": {
+      "sub_rule": "(3)(b) item 8",
+      "fee_inr": 500,
+      "row_text": "8. In case of addition or alteration in the Up to 10% Rs. 500.00"
+    },
+    "addition_above_10_pct": {
+      "sub_rule": "(3)(b) item 8",
+      "row_text": "above 10% Fresh application"
+    },
+    "revalidation": {
+      "sub_rule": "(3)(b) item 9",
+      "pct_of_original_fee": 10,
+      "row_text": "9. Revalidation of the building permission 10% of the amount of permission"
+    }
+  },
+  "high_rise": {
+    "sub_rule": "(3)(c)",
+    "page": 37,
+    "definition": {
+      "rule": "2(38)",
+      "storeys_gt": 10,
+      "height_m_gt": 30.0
+    },
+    "residential": {
+      "rate_inr_per_sqm": 10.0,
+      "row_text": "1. A building intended to be used Rs. 10.00 per square meter of the"
+    },
+    "commercial_or_industrial": {
+      "surcharge_pct": 100,
+      "row_text": "2. A building intended to be used as Fees as prescribed in item No. 1",
+      "row_text_parts": ["with additional charges of 100% of"]
+    },
+    "administrative_block_in_factory": {
+      "surcharge_pct": 0,
+      "derived_fields": ["surcharge_pct"],
+      "row_text": "3. A building intended to be used as Fees as prescribed in item No. 1."
+    },
+    "shop_cum_residence": {
+      "surcharge_pct": 50,
+      "row_text": "4. A building intended to be used for Fees as prescribed in item No. 1",
+      "row_text_parts": ["together with additional charges of", "50% of such amount of fees."]
+    },
+    "social_and_other": {
+      "surcharge_pct": 0,
+      "derived_fields": ["surcharge_pct"],
+      "row_text": "5. A building intended to be used for Fees as prescribed in item No. 1."
+    }
+  },
+  "verified_by": "",
+  "verified_at": ""
+}
