@@ -1,5 +1,31 @@
 # Bhumi Vikas Sahayak (भूमि विकास सहायक)
+This readme contains all the files created for the oct 11 buildathon hosted by cerebras and anthropic in the city of bhopal. The buildathon started from 12 pm and was concluded by 5 pm. Below are the details of the team and its members along with the project general information and how to use info.
 
+Team name : 3 idiots
+Team members : 
+Rishit bhat 
+Shiva trivedi 
+Ritesh shaw
+all 3 are 1st year students in Indian institute of Science Education and Research (IISER) bhopal.
+
+How to run it :
+1. Visit the vercel link or deploy it on system of your own choice by using the files provided in the github repo.
+2. If using your own deployment , connect your cerebras and anthropic api keys in the environment variable’s.
+3. Ask any question related to the rulebook and it would be answered appropriately.  
+
+Uniqueness:
+1. BM25 based rule referencing system.
+2. In-build calculator for calculation of fees rather than the model doing the math for individual plot owners.
+3. Direct refusal on irrelevant or confused or out of scope questions.
+4. Can be used directly by the plot owner’s cutting the clerk our in most cases.
+5. Data can be edited one by one rather than whole dataset change. 
+6. Easy to understand and use layout and ux.
+
+Future plans:
+1. Admin console for changing the database through a login portal and also to solve queries rejected by the AI.
+2. Can be used by the architect too by creating a special mode for them which suggests them all the technicalities and also help them check the changes and if they are under the rules in real like a normal llm.
+
+3. 
 **Prototype, not legal advice.** A tool for a Bhopal Municipal Corporation building-permission clerk at the
 counter. The clerk asks a question in English or Hindi and gets a short answer in the same language with
 the rule number, the **exact rule text** and its **PDF page** (links open the official English and Hindi
@@ -15,7 +41,7 @@ User: the building-permission clerk. The tool points to the rule; the clerk deci
 
 ## Run it on a counter PC (Windows, no internet needed)
 
-1. Install [uv](https://docs.astral.sh/uv/) and Node 24+.
+1. Install [uv](https://docs.astral.sh/uv/) and Node 24+ or on vercel at [vercel](https://bhumi-vikas-sahayak-two.vercel.app/)
 2. Clone this repository.
 3. Optional: put `CEREBRAS_API_KEY` and `ANTHROPIC_API_KEY` in `.env` (created from `.env.example` on first run).
    Without them the app runs in **OFFLINE** mode: calculators, templates and keyword search, no model.
