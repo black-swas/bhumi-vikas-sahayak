@@ -1,0 +1,20 @@
+.env
+.env.*
+!.env.example
+logs/
+backend/data/runtime/
+__pycache__/
+.venv/
+node_modules/
+web/build/
+web/.react-router/
+web/src/i18n/declaration.ts
+.pytest_cache/
+.ruff_cache/
+
+# read-only reference folders
+OpenHands-main/
+bhopal-impact-lab-2026-problem-statements-main/
+
+# event file
+*Cafe Compute.txt
