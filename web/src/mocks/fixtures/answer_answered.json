@@ -1,0 +1,55 @@
+{
+  "request_id": "fx-answered",
+  "question": "Is a lift required in a building over 15 m?",
+  "lang": "en",
+  "status": "ANSWERED",
+  "intent": "lifts",
+  "answer": "Lifts are required in a building above 12.5 m in height (Rule 83), so a 15 m building needs one.",
+  "calculations": [],
+  "citations": [
+    {
+      "chunk_id": "r83-0-0",
+      "rule": "83",
+      "label": "83",
+      "title": "Provision of Lifts, Escalators or Moving Walks",
+      "page": 95,
+      "quote": "Provision for lifts shall be made for building more than 12.5 meters in height.",
+      "verified": true,
+      "pdf_en": "/pdf/rules-en.pdf#page=95",
+      "pdf_hi": "/pdf/rules-hi.pdf#page=95"
+    }
+  ],
+  "warnings": [],
+  "missing_info": [],
+  "candidates": [],
+  "version": {
+    "label": "consolidated to 06/03/2025",
+    "corpus_sha256": "148eb556793fb741778c03206f21fb4ed3cb59ac3da4313ab78793fa725a44ad",
+    "amendments": [
+      "2026-08-28-r2-5-c"
+    ]
+  },
+  "meta": {
+    "providers": {
+      "A": "cerebras",
+      "B": "anthropic"
+    },
+    "models": {
+      "A": "qwen-3.8-27b",
+      "B": "claude-haiku-5-5"
+    },
+    "runtime_config_version": null,
+    "latency_ms": 1900,
+    "model_time_s": {
+      "A": 0.21,
+      "B": 1.2
+    },
+    "tokens": {
+      "input": 2400,
+      "output": 180,
+      "cached": 512
+    },
+    "calls": 2,
+    "replay": false
+  }
+}

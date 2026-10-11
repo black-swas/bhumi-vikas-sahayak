@@ -1,0 +1,47 @@
+{
+  "request_id": "fx-needs-review",
+  "question": "Which rule decides when the Development Plan and these rules disagree?",
+  "lang": "en",
+  "status": "NEEDS_REVIEW",
+  "intent": "dp_vs_rules",
+  "answer": "",
+  "calculations": [],
+  "citations": [],
+  "warnings": [
+    {
+      "type": "verification_failed",
+      "text": "The generated answer could not be verified against the rule text after one repair attempt, so it is not shown. Read the candidate rules below."
+    }
+  ],
+  "missing_info": [],
+  "candidates": [
+    "r103-0-0",
+    "r61-0-0"
+  ],
+  "version": {
+    "label": "consolidated to 06/03/2025",
+    "corpus_sha256": "148eb556793fb741778c03206f21fb4ed3cb59ac3da4313ab78793fa725a44ad",
+    "amendments": [
+      "2026-08-28-r2-5-c"
+    ]
+  },
+  "meta": {
+    "providers": {
+      "A": "cerebras",
+      "B": "anthropic"
+    },
+    "models": {
+      "A": "qwen-3.8-27b",
+      "B": "claude-haiku-5-5"
+    },
+    "runtime_config_version": null,
+    "latency_ms": 4100,
+    "model_time_s": {
+      "A": 0.2,
+      "B": 2.9
+    },
+    "calls": 3,
+    "replay": false,
+    "tokens": {}
+  }
+}

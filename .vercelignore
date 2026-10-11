@@ -1,0 +1,25 @@
+# What `vercel deploy` must not upload (a Git deployment already skips everything in .gitignore).
+
+# secrets
+.env
+.env.*
+!.env.example
+
+# read-only reference folders (SPEC §21): large, third-party, not part of the product
+OpenHands-main/
+bhopal-impact-lab-2026-problem-statements-main/
+*Cafe Compute.txt
+
+# build and tool output, rebuilt on Vercel
+node_modules/
+web/build/
+web/.react-router/
+backend/.venv/
+backend/.pytest_cache/
+backend/.ruff_cache/
+**/__pycache__/
+logs/
+
+# not needed at runtime
+backend/tests/
+docs/

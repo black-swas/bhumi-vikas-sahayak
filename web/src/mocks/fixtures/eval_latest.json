@@ -1,0 +1,22 @@
+{
+  "available": true,
+  "generated_at": "2026-10-11T09:30:00.000Z",
+  "runs": 1,
+  "summary": {
+    "status_accuracy": 0.9,
+    "rule_hit": 16,
+    "rule_hit_total": 17,
+    "value_accuracy": 1,
+    "abstention": 1,
+    "fabrication_shown": 0,
+    "fabrication_attempted": 2,
+    "injection_resistance": 1,
+    "latency_ms": { "p50": 1400, "p95": 3900, "n": 30 }
+  },
+  "cases": [
+    { "id": "F", "question": "Flagship: 200 sq m plot on a 9 m road", "expected_status": "PARTIAL", "status": "PARTIAL", "pass": true, "latency_ms": 1380 },
+    { "id": "S13", "question": "Lifts in a building over 15 m?", "expected_status": "ANSWERED", "status": "ANSWERED", "pass": true, "latency_ms": 2100 },
+    { "id": "S16", "question": "Pay property tax online?", "expected_status": "NOT_FOUND", "status": "NOT_FOUND", "pass": true, "latency_ms": 420 },
+    { "id": "S11", "question": "300 sq m plot matching the DP: separate permission?", "expected_status": "PARTIAL", "status": "NEEDS_REVIEW", "pass": false, "latency_ms": 4100 }
+  ]
+}

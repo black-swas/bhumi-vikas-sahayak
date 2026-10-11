@@ -1,0 +1,52 @@
+/* Fonts are bundled with the app (no CDN): the counter PC may be offline. */
+@import "@fontsource/outfit/300.css";
+@import "@fontsource/outfit/400.css";
+@import "@fontsource/outfit/500.css";
+@import "@fontsource/outfit/600.css";
+@import "@fontsource/noto-sans-devanagari/devanagari-400.css";
+@import "@fontsource/noto-sans-devanagari/devanagari-500.css";
+@import "@fontsource/noto-sans-devanagari/devanagari-600.css";
+
+:root {
+  --oh-bg-dark: var(--cool-grey-950);
+  --oh-bg-light: var(--cool-grey-900);
+  --oh-bg-input: var(--cool-grey-800);
+  background-color: var(--oh-color-base) !important;
+
+  /* Cool Grey Scale (13 shades). The color themes override these at runtime. */
+  --cool-grey-50:  #F7F9FC;
+  --cool-grey-100: #EEF2F7;
+  --cool-grey-200: #DCE3EE;
+  --cool-grey-300: #C3CDDC;
+  --cool-grey-400: #A3B0C4;
+  --cool-grey-500: #7E8A9E;
+  --cool-grey-600: #626D82;
+  --cool-grey-700: #4B5468;
+  --cool-grey-800: #383F50;
+  --cool-grey-900: #2C313F;
+  --cool-grey-925: #21252F;
+  --cool-grey-950: #0B0E14;
+  --cool-grey-975: #05070A;
+}
+
+body {
+  margin: 0;
+  background-color: var(--oh-color-base);
+  /* Devanagari falls through to Noto Sans Devanagari, both bundled. */
+  font-family: "Outfit", "Noto Sans Devanagari", "Segoe UI", system-ui, sans-serif;
+  font-size: 18px; /* a clerk reads this at arm's length */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:lang(hi) {
+  font-family: "Noto Sans Devanagari", "Outfit", "Nirmala UI", system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    font-size: 12pt;
+  }
+}

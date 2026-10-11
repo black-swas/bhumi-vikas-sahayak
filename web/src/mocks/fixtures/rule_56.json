@@ -1,0 +1,12 @@
+{
+  "rule": "56",
+  "title": "Residential Buildings",
+  "parent": null,
+  "part": "Part V: General Building Requirements",
+  "page_start": 77,
+  "page_end": 80,
+  "text": "56. Residential Buildings.-Open Spaces,- Exterior open spaces for buildings\nhaving height up to 12.5 meters.\n     (1) Front open spaces,-\n          (a) Every Residential Building having height up to 12.5 meters, facing street\n              shall have a front open space mentioned below and such open space shall\n              form an integral part of the site :-\n S.No.            Width of street facing the plot                Front open space Min.\n   (1)                          (2)                                       (3)\n    1.    Up to 9.0 meters                                            3.0 meters\n    2.    More than 9.0 meters and up to 12 meters                    3.6 meters\n    3.    More than 12.0 meters and up to 18 meters                   4.5 meters\n    4.    Above 18 meters                                             6.0 meters",
+  "chunks": [{ "id": "r56-1-0", "label": "56(1)", "pages": [77] }],
+  "pdf_en": "/pdf/rules-en.pdf#page=77",
+  "pdf_hi": "/pdf/rules-hi.pdf#page=77"
+}

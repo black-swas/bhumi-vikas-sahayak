@@ -1,0 +1,12 @@
+{
+  "status": "ok",
+  "mode": "live",
+  "prototype": true,
+  "amendments": ["2026-08-28-r2-5-c"],
+  "corpus": {
+    "sha256": "148eb556793fb741778c03206f21fb4ed3cb59ac3da4313ab78793fa725a44ad",
+    "rules": 106,
+    "chunks": 465,
+    "pages": 108
+  }
+}
