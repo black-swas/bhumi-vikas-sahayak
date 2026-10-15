@@ -87,4 +87,4 @@ needs a native review against the official Hindi PDF.
 ## Credits and licence
 
 MIT (`LICENSE`). Parts of `web/` are adapted from OpenHands Agent Canvas (MIT): see
-`THIRD_PARTY_NOTICES.md`. Built with AI assistance (Claude Code); humans reviewed the tables and labels.
+`THIRD_PARTY_NOTICES.md`. 
